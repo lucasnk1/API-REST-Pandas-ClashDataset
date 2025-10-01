@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "0e755bdd-cf71-439b-988f-d323ee5d04a6",
+		"name": "API PUCRS - Coleta e Análise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48950254",
+		"_collection_link": "https://www.postman.com/lucas-leuck050206-9846846/api-pucrs-coleta-e-anlise/collection/b6stang/api-pucrs-coleta-e-anlise?action=share&source=collection_link&creator=48950254"
+	},
+	"item": [
+		{
+			"name": "DEL - Delete",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"Health (+Shield)\": \"1,672\"\r\n    }"
+				},
+				"url": {
+					"raw": "{{url_base}}/api/unidades/9",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"api",
+						"unidades",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Busca por Valor Exato",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_base}}/api/unidades/busca/Executioner",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"api",
+						"unidades",
+						"busca",
+						"Executioner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Consulta Geral",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_base}}/api/unidades",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"api",
+						"unidades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Consulta Top N",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_base}}/api/unidades/top/15",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"api",
+						"unidades",
+						"top",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST - Filtro Múltiplo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Card\": \"Rocket\",\r\n    \"Cost\": 6.0,\r\n    \"Crown Tower Damage\": 493.0,\r\n    \"Damage\": \"1,232\",\r\n    \"Level\": 7.0,\r\n    \"Radius\": 2.0,\r\n    \"Type\": \"Damaging Spells\",\r\n    \"id\": 67\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_base}}/api/unidades/filtro",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"api",
+						"unidades",
+						"filtro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST - Inserção",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Card\": \"Poste\",\r\n        \"Card Level (Spawn Level)\": null,\r\n        \"Cost\": 2.0,\r\n        \"Count\": \"5\",\r\n        \"Crown Tower Damage\": null,\r\n        \"Damage\": \"67\",\r\n        \"Damage per second\": \"67\",\r\n        \"Death Damage\": 0.0,\r\n        \"Health (+Shield)\": \"67\",\r\n        \"Hit Speed\": \"1\",\r\n        \"Level\": 9.0,\r\n        \"Maximum Spawned\": null,\r\n        \"Radius\": null,\r\n        \"Range\": \"0\",\r\n        \"Spawn DPS\": null,\r\n        \"Spawn Damage\": null,\r\n        \"Spawn Health\": null,\r\n        \"Spawn Speed\": null,\r\n        \"Spawner Health\": null,\r\n        \"Troop Spawned\": null,\r\n        \"Type\": \"Troops and Defenses\",\r\n        \"id\": 70\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_base}}/api/unidades",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"api",
+						"unidades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT - Atualização",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"Health (+Shield)\": \"1,672\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_base}}/api/unidades/7",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"api",
+						"unidades",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
